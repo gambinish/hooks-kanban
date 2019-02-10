@@ -2,24 +2,32 @@
   "board_columns": [
     {
       "id": 1,
-      "title": "Backlog"
+      "title": "Accomodations"
     },
     {
       "id": 2,
-      "title": "In Progress"
+      "title": "Activities"
     },
     {
       "id": 3,
-      "title": "Done"
+      "title": "Other Offers"
+    },
+    {
+      "id": 4,
+      "title": "About Kaua'i"
     }
   ],
   "cards": [
     {
       "position": 1,
-      "desc": "hello1"
+      "title": "Kama'aina 10% off tours",
+      "desc": "Allerton & McBryde Gardens - NTBG",
+      "id": "allerton",
+      "image": "2018/pop-up-allerton.jpg",
+      "offerDetails": "The Living Treasure of the Garden Islands, the National Tropical Botanical Gardens offers unique experiences for the whole family.  We offer guided tours through Allerton Garden or self led tours through the McBryde Garden. Secluded between rugged cliffs dropping down to a verdant valley floor, prepare to be inspired, amazed and relaxed by nature, history, and culture. <br /><br /><strong>Call 808-742-2623 or visit NTBG.org. Present your local ID at check-in to save 10%  off!</strong>"
     },
     {
-      "position": 2,
+      "position": 1,
       "desc": "hello2"
     },
     {
