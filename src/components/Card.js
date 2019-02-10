@@ -38,11 +38,7 @@ const handleClick = (card, direction, board, setBoard) => {
   });
 };
 
-
 const showDetails = (toggle, details) => {
-  // let toggle = false;
-  // alert('triggered details')
-  // console.log(toggle, details)
   if (toggle === 'true') {
     return (
       <p>
@@ -68,9 +64,6 @@ export const Card = ({ card }) => {
       <button onClick={() => handleClick(card, 1, board, setBoard)}>
         move right
       </button>
-      {/* <button onClick={() => showDetails(card.offerDetails)}>
-        show details
-      </button> */}
       <button onClick={() => {
         if (toggle === 'false') {
           setToggle('true')
