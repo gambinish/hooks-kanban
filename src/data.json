@@ -1,0 +1,50 @@
+{
+  "board_columns": [
+    {
+      "id": 1,
+      "title": "Backlog"
+    },
+    {
+      "id": 2,
+      "title": "In Progress"
+    },
+    {
+      "id": 3,
+      "title": "Done"
+    }
+  ],
+  "cards": [
+    {
+      "position": 1,
+      "desc": "hello1"
+    },
+    {
+      "position": 2,
+      "desc": "hello2"
+    },
+    {
+      "position": 3,
+      "desc": "hello3"
+    },
+    {
+      "position": 4,
+      "desc": "hello4"
+    },
+    {
+      "position": 1,
+      "desc": "hello5"
+    },
+    {
+      "position": 2,
+      "desc": "hello6"
+    },
+    {
+      "position": 3,
+      "desc": "hello7"
+    },
+    {
+      "position": 4,
+      "desc": "hello8"
+    }
+  ]
+}

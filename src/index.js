@@ -1,12 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import styled from "styled-components";
+import { Columns } from "./components/Columns";
+import { MyProvider } from "./context";
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const AppTitle = styled.h1`
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+`;
+const Container = styled.div`
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+`;
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+export const App = () => {
+  return (
+    <MyProvider>
+      <AppTitle>Explore Kauai</AppTitle>
+      <NavBar />
+      <Hero />
+      <Container className="App">
+        <Columns />
+      </Container>
+    </MyProvider>
+  );
+};
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
