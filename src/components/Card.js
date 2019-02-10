@@ -3,7 +3,7 @@ import { AppContext } from "../context";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 32%;
+  /* width: 32%; */
   background-color: green;
   padding: 1rem;
   margin: 1rem;

@@ -6,10 +6,10 @@ import { Column } from "../components/Column";
 const Container = styled.div`
   width: auto;
   background-color: beige;
-  margin: 1rem 1rem 0 1rem;
-  padding-bottom: 2rem;
-  text-align: center;
-  display: flex;
+  margin: 1rem 1rem 1rem;
+  /* padding-bottom: 2rem; */
+  /* text-align: center;
+  display: flex; */
   @media (max-width: 400px) {
     margin: 1rem 1rem 0 1rem;
 }

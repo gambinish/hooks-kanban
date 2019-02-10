@@ -4,9 +4,12 @@ import styled from "styled-components";
 import { Card } from "../components/Card";
 
 const ColumnStyles = styled.div`
-  width: 100%;
+  display: grid;
+  grid-template-columns: 100fr 100fr 100fr;
+  grid-gap: 2px;
+  /* width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; */
   @media (max-width: 400px) {
     display: block;
 }
