@@ -39,21 +39,23 @@ const handleClick = (card, direction, board, setBoard) => {
 };
 
 
-// const showDetails = (details) => {
-//   // let toggle = false;
-//   // alert('triggered details')
-//   return (
-//     <p>
-//       testing details
-//       </p>
-//   )
-// };
+const showDetails = (toggle, details) => {
+  // let toggle = false;
+  // alert('triggered details')
+  // console.log(toggle, details)
+  if (toggle === 'true') {
+    return (
+      <p>
+        {details}
+      </p>
+    )
+  }
+};
+
 export const Card = ({ card }) => {
   const { state: board, setState: setBoard } = useContext(AppContext);
-
-  // state = {
-  //   isHidden: true,
-  // }
+  const { toggle, setToggle } = useContext(AppContext);
+  console.log(toggle)
 
   return (
     <Container>
@@ -69,6 +71,16 @@ export const Card = ({ card }) => {
       {/* <button onClick={() => showDetails(card.offerDetails)}>
         show details
       </button> */}
+      <button onClick={() => {
+        if (toggle === 'false') {
+          setToggle('true')
+        } else {
+          setToggle('false')
+        }
+      }}>
+        show details
+      </button>
+      {showDetails(toggle, card.offerDetails)}
     </Container>
   );
 };
