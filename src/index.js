@@ -5,7 +5,7 @@ import { Columns } from "./components/Columns";
 import { MyProvider } from "./context";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
-import Modal from "./components/Modal";
+import { ModalProvider } from "./context-modal";
 
 const AppTitle = styled.h1`
   margin: 0;
@@ -24,12 +24,14 @@ const Container = styled.div`
 export const App = () => {
   return (
     <MyProvider>
-      <AppTitle>Explore Kauai</AppTitle>
-      <NavBar />
-      <Hero />
-      <Container className="App">
-        <Columns />
-      </Container>
+      <ModalProvider>
+        <AppTitle>Explore Kauai</AppTitle>
+        <NavBar />
+        <Hero />
+        <Container className="App">
+          <Columns />
+        </Container>
+      </ModalProvider>
     </MyProvider>
   );
 };

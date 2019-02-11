@@ -1,7 +1,8 @@
 import React, { useContext, Fragment } from "react";
 import { AppContext } from "../context";
 import styled from "styled-components";
-import Modal from "./Modal";
+import { Modal } from "./Modal";
+import { ModalContext } from '../context-modal';
 
 // styled components
 
@@ -39,7 +40,7 @@ const handleClick = (card, direction, board, setBoard) => {
   });
 };
 
-const showDetails = (toggle, details) => {
+const showDetails = (toggle, id) => {
   if (toggle === 'true') {
     return (
       <Modal />
@@ -50,7 +51,7 @@ const showDetails = (toggle, details) => {
 export const Card = ({ card }) => {
   const { state: board, setState: setBoard } = useContext(AppContext);
   const { toggle, setToggle } = useContext(AppContext);
-  console.log(card)
+  const { state, setState } = useContext(ModalContext)
 
   return (
     <Container>
@@ -66,13 +67,17 @@ export const Card = ({ card }) => {
       <button onClick={() => {
         if (toggle === 'false') {
           setToggle('true')
+          console.log(card.offerDetails)
+          setState(card.offerDetails)
+          console.log('MODAL STATE: ', state)
         } else {
           setToggle('false')
+
         }
       }}>
         show details
       </button>
-      {showDetails(toggle, card.offerDetails)}
+      {showDetails(toggle, card.id)}
     </Container>
   );
 };

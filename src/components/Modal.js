@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 // import ModalStyles from './styles/ModalStyles';
 import styled from 'styled-components';
+import { ModalContext } from '../context-modal';
 
 const ModalStyles = styled.div`
   position: fixed;
@@ -10,17 +11,13 @@ const ModalStyles = styled.div`
   height: 200px;
   background-color: crimson;
   text-align: center;
-  /* z-index: -1; */
 `;
 
-class Modal extends Component {
-  render() {
-    return (
-      <ModalStyles>
-        hello
-      </ModalStyles>
-    );
-  }
+export const Modal = () => {
+  const { state, setState } = useContext(ModalContext)
+  return (
+    <ModalStyles>
+      {state}
+    </ModalStyles>
+  )
 }
-
-export default Modal;

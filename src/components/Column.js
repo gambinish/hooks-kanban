@@ -7,9 +7,6 @@ const ColumnStyles = styled.div`
   display: grid;
   grid-template-columns: 100fr 100fr 100fr;
   grid-gap: 2px;
-  /* width: 100%;
-  display: flex;
-  justify-content: space-between; */
   @media (max-width: 400px) {
     display: block;
 }
@@ -37,7 +34,7 @@ export const Column = ({ column }) => {
     <React.Fragment>
       {/* <SectionTitle>{column.title}</SectionTitle> */}
       <ColumnStyles>
-        {cards.map(card => column.id === card.position && <Card card={card} />)}
+        {cards.map(card => column.id === card.position && <Card card={card} details={card.id} />)}
       </ColumnStyles>
     </React.Fragment>
 
