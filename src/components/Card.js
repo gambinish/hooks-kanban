@@ -1,11 +1,7 @@
 import React, { useContext, Fragment } from "react";
 import { AppContext } from "../context";
 import styled from "styled-components";
-
-import Modal from 'react-modal';
-import ModalDetail from './Modal'
-import { ModalProvider, ModalConsumer } from './ModalContext';
-import ModalRoot from './ModalRoot';
+import Modal from "./Modal";
 
 // styled components
 
@@ -43,9 +39,18 @@ const handleClick = (card, direction, board, setBoard) => {
   });
 };
 
+const showDetails = (toggle, details) => {
+  if (toggle === 'true') {
+    return (
+      <Modal />
+    )
+  }
+};
+
 export const Card = ({ card }) => {
   const { state: board, setState: setBoard } = useContext(AppContext);
   const { toggle, setToggle } = useContext(AppContext);
+  console.log(card)
 
   return (
     <Container>
@@ -67,16 +72,7 @@ export const Card = ({ card }) => {
       }}>
         show details
       </button>
-      <ModalProvider>
-        <ModalRoot />
-        <ModalConsumer>
-          {({ showModal }) => (
-            <Fragment>
-              <button onClick={() => showModal(ModalDetail)}>Open Modal</button>
-            </Fragment>
-          )}
-        </ModalConsumer>
-      </ModalProvider>
+      {showDetails(toggle, card.offerDetails)}
     </Container>
   );
 };

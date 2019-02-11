@@ -5,6 +5,7 @@ import { Columns } from "./components/Columns";
 import { MyProvider } from "./context";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
+import Modal from "./components/Modal";
 
 const AppTitle = styled.h1`
   margin: 0;

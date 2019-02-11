@@ -1,12 +1,26 @@
-import React from 'react';
-import Modal from 'react-modal';
-import ModalStyles from './styles/ModalStyles';
+import React, { Component } from 'react';
+// import ModalStyles from './styles/ModalStyles';
+import styled from 'styled-components';
 
-const ModalDetail = ({ onRequestClose, ...otherProps }) => (
-  <ModalStyles isOpen onRequestClose={onRequestClose} {...otherProps}>
-    <button onClick={onRequestClose}>close</button>
-    <div>Placeholder</div>
-  </ModalStyles>
-);
+const ModalStyles = styled.div`
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-color: crimson;
+  text-align: center;
+  /* z-index: -1; */
+`;
 
-export default ModalDetail
+class Modal extends Component {
+  render() {
+    return (
+      <ModalStyles>
+        hello
+      </ModalStyles>
+    );
+  }
+}
+
+export default Modal;
