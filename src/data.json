@@ -35,23 +35,39 @@
       "offerDetails": "Your home away from home. Aston at Poipu Kai is perfect for your Staycation. Accommodations range from one to three bedroom suites, as well as two, three and four bedroom private homes.  Kama&#8216;&#257;ina receive free parking. Fully equipped kitchen, washer and dryer, beach towels are provided for you! No need bring 'em. Book direct and save. <br /><br /><strong>Call 855-747-0759  and book today. * </strong><br /><br />Must present valid State of Hawaii ID upon check-in. Other restrictions may apply."
     },
     {
-      "position": 3,
-      "title": "Rates starting at $139/night",
-      "desc": "Aston Islander on the Beach",
-      "id": "aston-islander",
-      "image": "2018/pop-up-aston-islander.jpg",
-      "offerDetails": "Your home away from home. Aston at Poipu Kai is perfect for your Staycation. Accommodations range from one to three bedroom suites, as well as two, three and four bedroom private homes.  Kama&#8216;&#257;ina receive free parking. Fully equipped kitchen, washer and dryer, beach towels are provided for you! No need bring 'em. Book direct and save. <br /><br /><strong>Call 855-747-0759  and book today. * </strong><br /><br />Must present valid State of Hawaii ID upon check-in. Other restrictions may apply."
-    },
-    {
-      "position": 4,
-      "desc": "hello4"
-    },
-    {
       "position": 1,
-      "desc": "hello5"
+      "title": "Rates starting at $169/night",
+      "desc": "Hilton Garden Inn Kaua'i Wailua Bay",
+      "id": "hilton-garden-inn",
+      "image": "2018/pop-up-hilton-garden-inn.jpg",
+      "offerDetails": "Our hotel features a spectacular beachfront location on scenic Wailua Bay, where the famous Wailua River meets the Pacific. Rates are subject to availability. Call (808) 823-6000 to book."
     },
     {
       "position": 2,
+      "title": "Kauai Boat Tours from just $70",
+      "desc": "Holo Holo Charters",
+      "id": "holoholo",
+      "image": "2018/pop-up-holoholo.jpg",
+      "offerDetails": "Experience genuine aloha hospitality service aboard Holo Holo Charter's Aloha Sunset Sail. Cruise along the sunny South Shore while enjoying an island-style buffet dinner, Koloa Rum Mai Tai’s, and listening to the classic homegrown sounds of Hawai&#8216;i’s local artists from the 1970's. Enjoy this all-inclusive tour for just $70 per person. <br/><br/><strong>Check out <a href='http://holoholocharters.com/'>holoholocharters.com</a> or call 808-335-0815 to take advantage of other Kama&#8216;&#257;ina rates: 20% off available on N&#257;pali Coast + Ni&#8216;ihau tours.</strong>"
+    },
+    {
+      "position": 2,
+      "title": "Kama'aina Surfer Rate",
+      "desc": "Kauai Shores Hotel",
+      "id": "kauai-shores",
+      "image": "2018/pop-up-kauai-shores.jpg",
+      "offerDetails": "A Local Favorite! Save 12% off our best available rate with your local ID. Valid Hawaii State ID or Driver's License required upon check in.<br/><br/><strong> Book your stay now at <a href='http://www.kauaishoreshotel.com'>www.kauaishoreshotel.com.</a></strong><br/><br/> Not combinable with other offers."
+    },
+    {
+      "position": 2,
+      "title": "Rates from $146/night",
+      "desc": "CRH-Wailua Bay View",
+      "id": "wailua-bay-view",
+      "image": "2018/pop-up-kauai-shores.jpg",
+      "offerDetails": "Wailua Bay View Oceanfront Condominium is uniquely perched overlooking the beautiful waters of Kaua&#8216;i's famed \"Coconut Coast\".  We invite our kama&#8216;&#257;ina guests to come and experience the view, and enjoy the comfort and relaxation of a fully furnished condo. Book and stay now to December 2018 and save up to 20% off.  <br/><br/><strong><a href='http://www.crhmaui.com'>www.crhmaui.com</a> or call 800-367-5242, Promo Code MS20.</strong>"
+    },
+    {
+      "position": 3,
       "title": "Rates starting at $139/night",
       "desc": "Aston Islander on the Beach",
       "id": "aston-islander",
@@ -60,11 +76,19 @@
     },
     {
       "position": 3,
-      "desc": "hello7"
+      "title": "Kama'aina rates starting at $247",
+      "desc": "Westin Princeville Ocean Resort Villas",
+      "id": "westin-princeville",
+      "image": "2018/pop-up-westin-princeville.jpg",
+      "offerDetails": "The Westin Princeville Ocean Resort Villas invites kama'&#257;ina guests to rejuvenate on Kaua&#8216;i's north shore. Book now for travel dates through December 21, 2018 and enjoy rates starting at $247 for an island-view studio villa, equipped with the conveniences of home and Westin signature amenities. Based on availability, black out dates may apply. <br /><br />Must present valid Hawaii State ID or Hawaii State Driver's License at check in. <br /><br /><strong>Call 866-837-4254 and ask for rate plan KAM.</strong>"
     },
     {
-      "position": 4,
-      "desc": "hello8"
+      "position": 3,
+      "title": "Whalers Cove kama&#8216;&#257;ina special",
+      "desc": "Whalers Cove Resort",
+      "id": "whalers-cove",
+      "image": "2018/pop-up-whalers-cove.jpg",
+      "offerDetails": "Whalers Cove Resort invites our kama&#8216;&#257;ina to enjoy a fabulous staycation in Po&#8216;ipū on Kaua&#8216;i! Get 20% off your stay when you show your Hawaii State ID or Hawaii State Driver's license. <br/ ><br /><strong>Call (808) 742-7571 to make your reservation.</strong> <br /><br /> Offer valid for reservations in April, May, June, August and early December only. Not available for reservations in July, October or November. Inventory is limited. May not be combined with other offers."
     }
   ]
 }
