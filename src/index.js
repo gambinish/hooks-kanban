@@ -26,10 +26,10 @@ export const App = () => {
       <ModalProvider>
         <AppTitle>Explore Kauai</AppTitle>
         <NavBar />
-        <Hero />
+        {/* <Hero />
         <Container className="App">
           <Columns />
-        </Container>
+        </Container> */}
       </ModalProvider>
     </MyProvider>
   );
