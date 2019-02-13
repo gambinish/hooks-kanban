@@ -15,7 +15,6 @@ const Container = styled.div`
 export const Columns = () => {
   const { state } = useContext(AppContext);
   const { board_columns: boardColumns } = state;
-  // console.log('state', state)
 
   return boardColumns.map(column => (
     <Container>

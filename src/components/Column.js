@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../context";
 import styled from "styled-components";
 import { Card } from "../components/Card";
+import { Element } from 'react-scroll'
 
 const ColumnStyles = styled.div`
   display: grid;
@@ -17,6 +18,7 @@ const SectionTitle = styled.h3`
   padding-top: 2rem;
 `
 
+// trigger the state change for card movement
 const handleClick = (columnId, setBoard) => {
   const desc = window.prompt();
 
@@ -37,6 +39,7 @@ export const Column = ({ column }) => {
   const { cards } = board;
   return (
     <React.Fragment>
+      <Element className={column.id} />
       <SectionTitle>{column.title}</SectionTitle>
       <ColumnStyles>
         {cards.map(card => column.id === card.position && <Card card={card} details={card.id} />)}

@@ -64,4 +64,4 @@ export const Modal = () => {
 }
 
 // TODO
-// Add animations: https://codesandbox.io/s/github/jeremenichelli/react-view-transition-example/tree/master/?from-embed
+// On modal close, animations don't kick in

@@ -26,7 +26,8 @@ const Image = styled.div`
 
 // helper functions
 
-// move the card between the different categories. using this to simulate multiple nodes being created by cms to specific areas
+// logic to move the card between the different categories. using this to simulate multiple nodes being created by cms to specific areas
+// netlify?
 const handleClick = (card, direction, board, setBoard) => {
   setBoard(existingBoard => {
     existingBoard.cards.map(elem => {

@@ -9,7 +9,7 @@ class Hero extends Component {
   render() {
     return (
       <HeroImage>
-        <img height='450px' width='100%' src='https://www.kauaikamaaina.com/img/hero-kvb.jpg'></img>
+        <img height='450px' width='100%' src='https://www.kauaikamaaina.com/img/hero-kvb.jpg' />
       </HeroImage>
     );
   }
