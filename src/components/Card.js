@@ -20,12 +20,13 @@ const Container = styled.div`
 const Image = styled.div`
   background-color: black;
   height: 15rem;
-  width: 25rem;
+  width: auto;
   justify-content: center;
 `;
 
 // helper functions
 
+// move the card between the different categories. using this to simulate multiple nodes being created by cms to specific areas
 const handleClick = (card, direction, board, setBoard) => {
   setBoard(existingBoard => {
     existingBoard.cards.map(elem => {
@@ -40,6 +41,7 @@ const handleClick = (card, direction, board, setBoard) => {
   });
 };
 
+// toggle modal component
 const showDetails = (toggle, id) => {
   if (toggle === 'true') {
     return (
@@ -48,10 +50,12 @@ const showDetails = (toggle, id) => {
   }
 };
 
+// pure component
+
 export const Card = ({ card }) => {
   const { state: board, setState: setBoard } = useContext(AppContext);
   const { toggle, setToggle } = useContext(AppContext);
-  const { state, setState } = useContext(ModalContext)
+  const { state, setState } = useContext(ModalContext);
 
   return (
     <Container>
@@ -67,9 +71,7 @@ export const Card = ({ card }) => {
       <button onClick={() => {
         if (toggle === 'false') {
           setToggle('true')
-          console.log(card.offerDetails)
           setState(card.offerDetails)
-          console.log('MODAL STATE: ', state)
         } else {
           setToggle('false')
 

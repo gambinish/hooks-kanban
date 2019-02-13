@@ -12,6 +12,11 @@ const ColumnStyles = styled.div`
 }
 `
 
+const SectionTitle = styled.h3`
+  text-align: center;
+  padding-top: 2rem;
+`
+
 const handleClick = (columnId, setBoard) => {
   const desc = window.prompt();
 
@@ -32,11 +37,10 @@ export const Column = ({ column }) => {
   const { cards } = board;
   return (
     <React.Fragment>
-      {/* <SectionTitle>{column.title}</SectionTitle> */}
+      <SectionTitle>{column.title}</SectionTitle>
       <ColumnStyles>
         {cards.map(card => column.id === card.position && <Card card={card} details={card.id} />)}
       </ColumnStyles>
     </React.Fragment>
-
   );
 };
