@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import HeroStyles from './styles/HeroStyles';
 
-const HeroImage = styled.div`
-  align-items: center;
-`
 
 class Hero extends Component {
   render() {
     return (
-      <HeroImage>
-        <img height='450px' width='100%' src='https://www.kauaikamaaina.com/img/hero-kvb.jpg' />
-      </HeroImage>
+      <HeroStyles>
+        <h1>You don’t have to fly thousands of miles for a little adventure.</h1>
+      </HeroStyles>
     );
   }
 }
